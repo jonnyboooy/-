@@ -10,4 +10,3 @@ def final_grade(exam, projects):
 
 if __name__ == '__main__':
     print(final_grade(55, 9))
-    
