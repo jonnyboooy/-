@@ -37,9 +37,10 @@ def bocce_score(balls):
         return 'No points scored'
 
 if __name__ == '__main__':
-    # print(sequence_sum(2, 6, 2))
-    # print(sequence_sum(20, 673388797, 5))
-    ls1 = [1, 2, 3, 3]
-    ls2 = [2, 3]
-    diff = list(set(ls1) - set(ls2))
-    print(diff)
+    print(bocce_score([
+        {"type": "black", "distance": (60, 1)},
+        {"type": "black", "distance": (61, 3)},
+        {"type": "red", "distance": (61, 3)},
+        {"type": "red", "distance": (65, -1)},
+        {"type": "jack", "distance": (60, 2)}
+    ]))
