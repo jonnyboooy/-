@@ -3,7 +3,7 @@ import re
 
 class Solution:
     def isPalindrome(self, s: str) -> bool:
-        s = re.sub(r'[,.:@#_;!\"\'\[\]\{\}\-\?\(\)\` ]', '', s).lower()
+        s = re.sub('[,.:@#_;!\"\'\[\]\{\}\-\?\(\)\` ]', '', s).lower()
 
         l = 0
         r = len(s) - 1
@@ -16,4 +16,3 @@ class Solution:
             r -= 1
 
         return True
-
