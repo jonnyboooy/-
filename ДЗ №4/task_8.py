@@ -22,21 +22,20 @@ class Solution:
                 hb = hb.next
 
         count = abs(counter_a - counter_b)
-
-        ha, hb = headA, headB
+        ha = headA
+        hb = headB
 
         while ha:
-
             if count > 0:
                 if counter_a < counter_b:
                     hb = hb.next
                 else:
                     ha = ha.next
-
                 count -= 1
             elif ha is hb:
                 return ha
             else:
                 ha = ha.next
                 hb = hb.next
+                
         return
